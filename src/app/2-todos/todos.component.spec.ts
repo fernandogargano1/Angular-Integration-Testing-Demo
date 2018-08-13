@@ -43,21 +43,20 @@ describe('TodosComponent', () => {
         expect(component.todos.length).toBe(3);
 
     });
-/*
-  // it('should load todos from the server', async(() => {
-    it('should load todos from the server', fakeAsync(() => {
+
+  /* it('should load todos from the server', async(() => {
+    // it('should load todos from the server', fakeAsync(() => {
      let service = TestBed.get(TodoService);
      spyOn(service, 'getTodosPromise').and.returnValue(Promise.resolve([1, 2, 3]));
      fixture.detectChanges();
 
-    //  fixture.whenStable().then(() => {
-    //   expect(component.todos.length).toBe(3);
-    //  });   
+     fixture.whenStable().then(() => {
+      expect(component.todos.length).toBe(3);
+     });   
 
-    tick();    
-    expect(component.todos.length).toBe(3);
+    // tick();    
+    // expect(component.todos.length).toBe(3);
 
-     // console.log('EXPECT WAS CALLED');
-    })); 
-*/    
+      // console.log('EXPECT WAS CALLED');
+    }));    */
 });

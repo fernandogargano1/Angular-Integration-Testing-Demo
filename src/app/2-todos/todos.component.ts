@@ -12,12 +12,13 @@ export class TodosComponent implements OnInit {
   message; 
 
   constructor(private service: TodoService) {}
-
+  
+  // The code in comments handle de case of a promise being return 
   ngOnInit() { 
-    this.service.getTodos().subscribe(t => this.todos = t);
-    //this.service.getTodosPromise().then(t => {
-      // console.log("THEN WAS CALLED");
-      // this.todos = t
+     this.service.getTodos().subscribe(t => this.todos = t);
+    // this.service.getTodosPromise().then(t => {
+    //   console.log("THEN WAS CALLED");
+    //   this.todos = t
     // });
   }
 

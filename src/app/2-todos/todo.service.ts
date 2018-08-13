@@ -10,7 +10,7 @@ export class TodoService {
   add(todo) {
     return this.http.post('...', todo).map(r => r.json());
   }
-
+ 
   getTodos() { 
     return this.http.get('...').map(r => r.json());
   }
